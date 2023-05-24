@@ -10,18 +10,18 @@
   <body>
     <header class="page-header">
       <nav class="page-header-nav">
-        <a class="page-header-logo" href="#">
-          <img class="page-header-logo-img" scr="#" alt="Логотип типа" />
+        <a class="page-header-logo" href="index.html">
+          <img class="page-header-logo-img" scr="#" alt="Логотип" />
         </a>
         <ul class="page-header-nav-list">
           <li class="page-header-nav-item">
-            <a class="page-header-nav-link" href="#">Главная</a>
+            <a class="page-header-nav-link" href="index.html">Главная</a>
           </li>
           <li class="page-header-nav-item">
             <a class="page-header-nav-link" href="#">О Седоне</a>
           </li>
           <li class="page-header-nav-item">
-            <a class="page-header-nav-link" href="#">Гостиницы</a>
+            <a class="page-header-nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -34,82 +34,99 @@
     <main>
         <section class="hotels">
 <h1 class="hotels-title">Гостиницы Седоны</h1>
-<a class="hotels-link" href="#">Гостиницы</a>
-<ul class="hotels-comfort-list">
-    <h2 class="hotels-comfort-list-title">Инфраструктура</h2>
-    <li class="hotels-comfort-list-item">Бассейн</li>
-    <li class="hotels-comfort-list-item">Парковка</li>
-    <li class="hotels-comfort-list-item">Wi-Fi</li>
+<ul class="breadcrumbs" >
+    <li class="breadcrumbs-item" >
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
+    </li>
+    <li class="breadcrumbs-item" >
+<a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+    </li>
 </ul>
-<fieldset class="catalog-filter-group">
-    <legend class="catalog-filter-title">Инфраструктура</legend>
-    
-          <label class="control">
-            <input class="control-input" type="checkbox" name="bed-head-for-men">
 
-        Бассейн
-          </label><ul class="catalog-filter-list">
-        <li class="catalog-filter-item">
-        </li>
-    <li class="catalog-filter-item">
-      <label class="control">
-        <input class="control-input" type="checkbox" name="homme-deep-cleansing-cool" checked>
-
-        Парковка
-      </label>
-    </li>
-    <li class="catalog-filter-item">
-      <label class="control">
-        <input class="control-input" type="checkbox" name="so-intense" checked>
-
-        Wi-Fi
-      </label>
-    </li>
-    <li class="catalog-filter-item">
-      <label class="control">
-        <input class="control-input" type="checkbox" name="sprekenhus">
-
-        Sprekenhus
-      </label>
-
-
-<fieldset class="hotels-tipe-choise">
-    <legend class="hotels-tipe-choise-title">Тип Жилья</legend>
-    <ul class="hotels-tipe-choise-list">
-        <li class="hotels-tipe-choise-item">
-          <label class="control">
-            <input class="control-input" type="radio" name="hotels-tipe-choise" value="shaving-supplies">
-
-        Гостиница
-          </label>
-        </li>
-        <li class="choise-item">
-          <label class="control">
-            <input class="control-input" type="radio" 
-            name="hotels-tipe-choisp" value="care-products" checked>
-
-        Мотель
-          </label>
-        </li>
-        <li class="hotels-tipe-choise-item">
-          <label class="control">
-            <input class="control-input" type="radio" name="hotels-tipe-choise" 
-            value="accessories">
-
-        Апартаменты
-          </label>
-        </li>
-      </ul>
+<form>
+    <fieldset>
+        <legend>Инфраструктура</legend>
+            <ul>
+                <li>
+                    <label>
+<input type="checkbox" name="
+infrastructure" value="Бассейн">
+<span>Бассейн</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+<input type="checkbox" name="
+infrastructure" value="Парковка">
+<span>Парковка</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+<input type="checkbox" name="
+infrastructure" value="Wi-fi">
+<span>Wi-fi</span>
+                    </label>
+                </li>
+            </ul>
     </fieldset>
 
 
 
-<ul class="hotels-tipe-list">
-    <h2 class="hotels-tipe-list-title">Тип Жилья</h2>
-    <li class="hotels-tipe-list-item">Гостиница</li>
-    <li class="hotels-tipe-list-item">Мотель</li>
-    <li class="hotels-tipe-list-item">апартаменты</li>
-</ul>
+    <fieldset>
+        <legend>Тип Жилья</legend>
+            <ul>
+                <li>
+                    <label>
+<input type="radio" name="type" value="Гостиница">
+<span>Гостиница</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+<input type="radio" name="type" value="Мотель">
+<span>Мотель</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+<input type="radio" name="type" value="Апартаменты">
+<span>Апартаменты</span>
+                    </label>
+                </li>
+            </ul>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Стоимость,₽</legend>
+            <ul>
+                <li>
+                    <label>
+<input type="text" name="price-form" value="0">
+<span>от</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+<input type="text" name="price-to" value="9000">
+<span>до</span>
+                    </label>
+                </li>
+            </ul>
+    </fieldset>
+    <div>
+    <button class="button price-button" type="submit">Применить
+      </button>
+      <button class="button price-throe-button" type="reset">Сбросить
+      </button>
+</div>
+</form>
+
+
+
+
 <h2 class="price">Стоимость,₽</h2>
 <form class="price-form" action="#" method="post">
 
